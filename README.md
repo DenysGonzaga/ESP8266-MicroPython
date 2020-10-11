@@ -1,10 +1,10 @@
 # MicroPython v1.13 + ESP8266 + Esptool
 
-Este é um pequeno tutorial de como configurar, desenvolver e rodar um código em uma placa ESP8266.
-Aqui eu usei um pc com Windows 10, uma placa Lolin Node MCU v3 que você pode encontrar [aqui](https://produto.mercadolivre.com.br/MLB-1659824435-modulo-wifi-esp8266-nodemcu-v3-ch340-wifi-80211-bgn-arduino-_JM) e um cabo micro USB com a função de Sync ou que também é chamado de cabo de dados. (é bem importante verificar isso pois já tive um problema de reconhecimento da placa com um cabo usb que não tinha essa funcionalidade)
+Este é um pequeno tutorial de como configurar, desenvolver e rodar um código em uma placa ESP8266. <br />
+Aqui eu usei um pc com Windows 10, uma placa Lolin Node MCU v3 que você pode encontrar [aqui](https://produto.mercadolivre.com.br/MLB-1659824435-modulo-wifi-esp8266-nodemcu-v3-ch340-wifi-80211-bgn-arduino-_JM) e um cabo micro USB com a função de Sync ou que também é chamado de cabo de dados. (é bem importante verificar isso pois já tive um problema de reconhecimento da placa com um cabo usb que não tinha essa funcionalidade)  <br />
 A ideia é configurar a placa e o ambiente de desenvolvimento, enviar o código para que acione um led embutido na própria placa (builtin led)
 <br />
-### <u>Softwares usados</u>
+### Softwares usados
 
 * [CP210x USB to UART Bridge VCP Drivers](https://www.silabs.com/products/development-tools/software/usb-to-uart-bridge-vcp-drivers)
 * [uPyCraft](https://github.com/DFRobot/uPyCraft)
@@ -12,11 +12,11 @@ A ideia é configurar a placa e o ambiente de desenvolvimento, enviar o código 
 * [esptool.py](https://github.com/espressif/esptool) (pip3 install esptool)
 * [MicroPython Firmware](https://micropython.org/)
 
-### <u>Configuração</u>
+### Configuração
 Faça o download e instale o firmware de ESP8266 do site da silabs (o primeiro link da seção Softwares Usados), meu windows só reconheceu a placa com esse driver.
 Instale o Python versão 3 e o esptool.py usando `pip3 install esptool`.<br />
 Baixe o uPyCraft, não necessita de instalação.<br />
-Baixe o firmware do MicroPython que corresponda a placa que você usa, no meu caso foi [essa](https://micropython.org/download/esp8266/).<br />
+Baixe o firmware do MicroPython que corresponda a placa que você usa, no meu caso foi [nessa](https://micropython.org/download/esp8266/) seção.<br />
 Com o esptool.py instalado e a placa reconhecida (no caso do windows é verificar se foi alocada uma porta serial para a placa), rode esse comando no `cmd` para apagar a memória da placa.
 
 ```
@@ -29,7 +29,7 @@ Instale o firmware do MicroPython gravando a flash. No caso `esp8266-20200911-v1
 esptool.py --baud 460800 write_flash --flash_size=detect 0 esp8266-20200911-v1.13.bin
 ```
 
-### <u>Programando e Rodando</u>
+### Programando e Rodando
 <br />
 
 Para desenvolver usando ESP8266, vamos usar o uPycraft que faz a conexão com a placa e o download do código para que ele rode.
@@ -42,7 +42,7 @@ Depois disso selecione a porta serial (COM) e o tipo da placa que você está us
 ![](https://github.com/DenysNunes/ESP8266-MicroPython/blob/master/assets/image1.gif?raw=true) <br />
 ![](https://github.com/DenysNunes/ESP8266-MicroPython/blob/master/assets/image2.gif?raw=true)
 
-Conect na placa usando o botão <b>Connect</b>.
+Faça a conexão na placa usando o botão <b>Connect</b>.
 
 ![](https://github.com/DenysNunes/ESP8266-MicroPython/blob/master/assets/image3.gif?raw=true)
 

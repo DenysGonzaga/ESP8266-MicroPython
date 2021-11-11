@@ -1,6 +1,6 @@
-# MicroPython v1.13 + ESP8266 + Esptool
+# MicroPython v1.13 + ESP8266 + uPyCraft
 
-Este é um pequeno tutorial de como configurar, desenvolver e rodar um código em uma placa ESP8266. <br />
+Este é um pequeno tutorial de como configurar, desenvolver e rodar um código python em uma placa ESP8266. <br />
 Aqui eu usei um pc com Windows 10, uma placa Lolin Node MCU v3 que você pode encontrar [aqui](https://produto.mercadolivre.com.br/MLB-1659824435-modulo-wifi-esp8266-nodemcu-v3-ch340-wifi-80211-bgn-arduino-_JM) e um cabo micro USB com a função de Sync ou que também é chamado de cabo de dados. (é bem importante verificar isso pois já tive um problema de reconhecimento da placa com um cabo usb que não tinha essa funcionalidade)  <br />
 A ideia é configurar a placa e o ambiente de desenvolvimento, enviar o código para que acione um led embutido na própria placa (builtin led)
 <br />

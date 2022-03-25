@@ -14,7 +14,7 @@ A ideia é configurar a placa e o ambiente de desenvolvimento, enviar o código 
 
 ### Configuração
 Faça o download e instale o firmware de ESP8266 do site da silabs (o primeiro link da seção Softwares Usados), meu windows só reconheceu a placa com esse driver.
-Em um outro momento precisei instalar esse driver [aqui](https://github.com/nodemcu/nodemcu-devkit/blob/master/Drivers/) também.
+Em um outro momento precisei instalar esse driver [aqui](https://github.com/nodemcu/nodemcu-devkit/blob/master/Drivers/) também.<br />
 Instale o Python versão 3 e o esptool.py usando `pip3 install esptool`.<br />
 Baixe o uPyCraft, não necessita de instalação.<br />
 Baixe o firmware do MicroPython que corresponda a placa que você usa, no meu caso foi [nessa](https://micropython.org/download/esp8266/) seção.<br />
